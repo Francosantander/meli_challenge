@@ -1,0 +1,70 @@
+@import '../variables';
+
+.search-box {
+  &__container {
+    width: 100%;
+    background-color: $ml-yellow;
+    padding: 1rem;
+  }
+
+  &__wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  &__form {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  &__input-wrapper {
+    position: relative;
+    flex: 1;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 0.75rem;
+    padding-right: 2.5rem;
+    border-radius: 0.25rem;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    
+    &:focus {
+      box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+    }
+
+    &::placeholder {
+      color: $ml-gray;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    padding: 0 1rem;
+    background-color: $ml-light-gray;
+    border: none;
+    border-radius: 0 0.25rem 0.25rem 0;
+    cursor: pointer;
+    transition: background-color 0.2s;
+
+    &:hover {
+      background-color: darken($ml-light-gray, 5%);
+    }
+  }
+
+  &__icon {
+    fill: $ml-gray;
+  }
+
+  &__error {
+    margin-top: 0.5rem;
+    color: $ml-error;
+    font-size: 14px;
+  }
+}

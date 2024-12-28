@@ -1,0 +1,41 @@
+@import '../variables';
+
+.search-results {
+  background-color: $ml-light-gray;
+  min-height: calc(100vh - 56px);
+
+  &__content {
+    max-width: $container-max-width;
+    margin: 0 auto;
+    padding: 16px;
+  }
+
+  &__breadcrumb {
+    font-size: 14px;
+    color: $ml-gray;
+    margin-bottom: 16px;
+  }
+
+  &__list {
+    background-color: $ml-white;
+    border-radius: 4px;
+  }
+
+  &__loading,
+  &__error,
+  &__empty {
+    background-color: $ml-white;
+    padding: 16px;
+    text-align: center;
+    border-radius: 4px;
+    margin-top: 16px;
+  }
+
+  &__error {
+    color: $ml-error;
+  }
+
+  &__empty {
+    color: $ml-gray;
+  }
+}
